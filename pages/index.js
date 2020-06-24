@@ -4,44 +4,76 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>BKW Design &amp; Development Consultancy</title>
+        <title>OUTER</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <img src="/bkw.svg" alt="BKW Logo" className="logo" />
-        <a href="mailto:start@bk-w.com">start@bk-w.com</a>
+        <img src="/outer.svg" alt="OUTER Logo" className="logo" />
+        <h1 className="title">OUTER</h1>
+        <p className="description">Design and development consultancy</p>
+        <a href="mailto:outer@hey.com">Start a project</a>
       </main>
 
       <style jsx>{`
+        .container {
+          min-height: 100vh;
+          padding: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
         main {
-          padding: 1rem;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          height: 100vh;
-          width: 100vw;
         }
+
         a {
+          color: #4200ff;
+          background: #f9f9f9;
           text-decoration: none;
-          border-bottom: 1px solid;
-          font-weight: bold;
+          padding: 1ch 2ch;
+          border-radius: 2ch;
         }
+
+        a:hover {
+          background: #4200ff;
+          color: #fff;
+        }
+
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
+
+        .title,
+        .description {
+          text-align: center;
+        }
+
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
+        }
+
         .logo {
-          height: 16vw;
-          margin-bottom: 8vw;
+          width: 16ch;
+          margin-bottom: 4ch;
         }
       `}</style>
 
       <style jsx global>{`
         html,
         body {
-          color: #bdff00;
-          background: #8d8d8d;
           padding: 0;
           margin: 0;
+          color: #4200ff;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
@@ -49,7 +81,6 @@ export default function Home() {
 
         * {
           box-sizing: border-box;
-          color: #bdff00;
         }
       `}</style>
     </div>
