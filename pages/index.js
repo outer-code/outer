@@ -59,7 +59,7 @@ export default function Home() {
 
         .description {
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 1rem;
         }
 
         .logo {
