@@ -11,7 +11,7 @@ export default function Home() {
       <main>
         <img src="/outer.svg" alt="OUTER Logo" className="logo" />
         <h1 className="title">OUTER</h1>
-        <p className="description">Design and development consultancy</p>
+        <p className="description">Design and development office</p>
         <a href="mailto:outer@hey.com">Start a project</a>
       </main>
 
